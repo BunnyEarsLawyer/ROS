@@ -23,3 +23,5 @@ How to run a node in a package
 $ roscore
 $ rosrun my_package my_node
 
+How to list things
+$ rospack list  
