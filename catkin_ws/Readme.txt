@@ -25,3 +25,19 @@ $ rosrun my_package my_node
 
 How to list things
 $ rospack list  
+$ rosnode list  
+$ rosmsg list
+
+----------------
+---KHAN---------
+----------------
+
+2/16/2017
+Summary: 
+Added scripts quadrature and sample demo to CMakeLists.txt
+After a 'catkin_make' they showed up after a tab completion.
+
+$ rosrun beginner_tutorials talker.py
+$ rosrun khan_control quadrature.py
+$ rosrun khan_control first_demo.py 
+
