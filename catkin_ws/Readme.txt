@@ -13,7 +13,7 @@ $ roscd my_package
 //
 // If it doesn't work you need to source setup.bash from devel
 //
-$ souce ./catkin_ws/devel/setup.bash
+$ source ./catkin_ws/devel/setup.bash
 
 How to create a package
 $ cd ./src
@@ -28,6 +28,10 @@ $ rospack list
 $ rosnode list  
 $ rosmsg list
 
+How to view environment variables 
+$ printenv | grep ROS
+$ echo $ROS_PACKAGE_PATH
+
 ----------------
 ---KHAN---------
 ----------------
@@ -40,4 +44,47 @@ After a 'catkin_make' they showed up after a tab completion.
 $ rosrun beginner_tutorials talker.py
 $ rosrun khan_control quadrature.py
 $ rosrun khan_control first_demo.py 
+
+All launch files do not work:
+$ roslaunch khan_launch khan_gazebo.launch  //Use tab complete to try others
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
