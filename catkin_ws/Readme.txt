@@ -59,9 +59,11 @@ How to connect to KHAN
 3. Wait
 4. $ ssh $username@$hostname
 
+// May need to install ros-controllers
+$ sudo apt-get install ros-indigo-ros-control ros-indigo-ros-controllers
 
-
-
+// Reference:
+http://wiki.ros.org/ros_control#Hardware_Interfaces
 
 
 
