@@ -1,0 +1,19 @@
+#!/usr/bin/python
+
+# Demo of some programming concepts in Python
+import Adafruit_BBIO.GPIO as GPIO
+GPIO.setup("P8_7", GPIO.IN)
+GPIO.setup("P8_8", GPIO.IN)
+GPIO.setup("P8_10", GPIO.IN)
+GPIO.setup("P8_11", GPIO.IN)
+
+if GPIO.input("P8_7"):
+  print("HIGH")
+else:
+  print("LOW")
+
+
+if GPIO.input("P8_8"):
+  print("HIGH")
+else:
+  print("LOW")
