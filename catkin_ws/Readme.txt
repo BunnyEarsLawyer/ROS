@@ -10,6 +10,9 @@ $ catkin_make
 How to check the package got recognized
 $ roscd my_package            
 
+How to list ros packages and find a keyword
+$rospack list | grep khan_control
+
 //
 // If it doesn't work you need to source setup.bash from devel
 //
@@ -47,6 +50,14 @@ $ rosrun khan_control first_demo.py
 
 All launch files do not work:
 $ roslaunch khan_launch khan_gazebo.launch  //Use tab complete to try others
+
+6/3/2017
+
+How to connect to KHAN
+1. On Ubuntu 14.04 connect to USB
+2. Run driver script
+3. Wait
+4. $ ssh $username@$hostname
 
 
 
