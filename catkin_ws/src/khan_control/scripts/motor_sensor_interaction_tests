@@ -2,18 +2,41 @@
 
 # Demo of some programming concepts in Python
 import Adafruit_BBIO.GPIO as GPIO
+import Adafruit_BBIO.PWM as PWM
+import Adafruit_BBIO.ADC as ADC
+
 GPIO.setup("P8_7", GPIO.IN)
-GPIO.setup("P8_8", GPIO.IN)
+GPIO.setup("P8_8", GPIO.OUT)
 GPIO.setup("P8_10", GPIO.IN)
 GPIO.setup("P8_11", GPIO.IN)
 
+ADC.setup()
+
+# Set a pin as a high and a low state
 if GPIO.input("P8_7"):
   print("HIGH")
 else:
   print("LOW")
 
+# Set pin 8 as high
+GPIO.output("P8_8", GPIO.LOW)
 
 if GPIO.input("P8_8"):
   print("HIGH")
 else:
   print("LOW")
+
+# Good practice to clean up
+GPIO.cleanup()
+
+# PWM.start(channel, duty, freq=2000, polarity=0)
+# PWM.start("P8_19", 50)
+
+# Read the analog inputs
+# Warning! 1.8 V is the maximum voltage. 
+# Do not exceed 1.8 on AIN (analog input) pins
+
+# There is a bug. You need to read twice to get the value
+value = ADC.read("P9_33")
+value = ADC.read("P9_33")
+print value
